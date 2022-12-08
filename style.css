@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    background-image: url("background.jpg");
+}
+h1{
+    color:aliceblue;
+    background-color: blue;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 5px;
+    width:70%;
+}
+.PLogin{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: blue;
+    border-radius: 10px;
+    width: 60%;
+}
+#login{
+    color:aliceblue;
+    background-color: blue;
+    border-width: 1px;
+    border-style: solid;
+    border-color: aliceblue;
+    width:60%;
+}
