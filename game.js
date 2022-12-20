@@ -19,6 +19,6 @@ function send(){
     button = "<br><br><button class='btn btn-info' onclick='check()'>Checar</button>";
     row = question + input + button;
     document.getElementById("output").innerHTML = row;
-    document.getElementById("number1").innerHTML = "";
-    document.getElementById("number2").innerHTML = "";
+    document.getElementById("number1").value = "";
+    document.getElementById("number2").value = "";
 }
