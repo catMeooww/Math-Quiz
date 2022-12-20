@@ -10,15 +10,17 @@
     <script src="game.js"></script>
 </head>
 
-<body>
-    <h4 id="player1_name"></h4><span id="player1_score"></span>
-    <h4 id="player2_name"></h4><span id="player2_score"></span>
-    <div class="container">
+<body onload="load()">
+    <center>
+    <h4 id="player1_name" style="color:rgb(0, 0, 0)"></h4><span id="player1_score" style="color:rgb(0, 0, 0)"></span>
+    <h4 id="player2_name" style="color:rgb(0, 0, 0)"></h4><span id="player2_score" style="color:rgb(0, 0, 0)"></span>
+   </center>
+    <div class="container" style="background-color:rgba(240, 248, 255, 0.493)">
         <center>
             <h2 style="color:rgb(9, 51, 6)">Quiz de Matemática</h2>
             <br>
-            <h4 style="color:rgb(9, 58, 5)">Questão: </h4><span id="playerQ" style="color:rgb(9, 65, 5)"></span>
-            <h4 style="color:rgb(9, 58, 6)">Resposta: </h4><span id="playerA" style="color:rgb(9,65,5)"></span>
+            <h4 style="color:rgb(0, 0, 0)">Questão: </h4><span id="playerQ" style="color:rgb(9, 65, 5)"></span>
+            <h4 style="color:rgb(0, 0, 0)">Resposta: </h4><span id="playerA" style="color:rgb(9,65,5)"></span>
             <br>
             <div id="output">
                 <h3 id="pergunta"></h3>
