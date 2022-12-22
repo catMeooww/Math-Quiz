@@ -1,3 +1,5 @@
+question_turn = "player1";
+answer_turn = "player2";
 function load(){
     p1 = localStorage.getItem("p1");
     p2 = localStorage.getItem("p2");
@@ -19,6 +21,30 @@ function send(){
     button = "<br><br><button class='btn btn-info' onclick='check()'>Checar</button>";
     row = question + input + button;
     document.getElementById("output").innerHTML = row;
-    document.getElementById("number1").value = "";
-    document.getElementById("number2").value = "";
+    document.getElementById("number1").value = " ";
+    document.getElementById("number2").value = " ";
+}
+function check(){
+getAnswer = document.getElementById("check_box").value;
+if(getAnswer == answer){
+    if(answer_turn == "player1"){
+        p1_score++
+        document.getElementById("player1_score").innerHTML = p1_score
+    }else{
+        p2_score++
+        document.getElementById("player2_score").innerHTML = p2_score
+    }
+    if(question_turn == "player1"){
+        question_turn = "player2";
+        document.getElementById("playerQ").innerHTML = p2;
+        answer_turn = "player1";
+        document.getElementById("playerA").innerHTML = p1;
+    }else{
+        question_turn = "player1";
+        document.getElementById("playerQ").innerHTML = p1;
+        answer_turn = "player2";
+        document.getElementById("playerA").innerHTML = p2;
+    }
+    document.getElementById("output").innerHTML = "";
+}
 }
